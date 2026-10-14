@@ -1,4 +1,5 @@
 \documentclass{bmstu}
+\usepackage{pdfpages}
 
 \bibliography{biblio}
 
@@ -12,6 +13,18 @@
     {Кузнецова~О.~В.} % ФИО научного руководителя
     {}
     % {Сидоров~С.~С.,Кузнецов~К.~К.} % ФИО консультанта (необязательный аргумент; если консультантов несколько, их необходимо разделить запятой)
+
+\includepdf[
+    pages=2,
+    pagecommand={\thispagestyle{plain}},
+    % addtotoc={
+    %     1,
+    %     chapter,
+    %     1,
+    %     Техническое задание,
+    %     techspec
+    % }
+]{technical_specification.pdf}
 
 \maketableofcontents
 
