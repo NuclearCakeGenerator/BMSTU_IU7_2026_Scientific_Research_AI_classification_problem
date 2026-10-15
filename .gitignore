@@ -40,5 +40,10 @@ build/
 bin/
 obj/
 
+## --- Pdf files ---
 *.pdf
 !bmstu-logo.pdf
+
+## --- Microsoft Word temporary files ---
+*.tmp
+~$*
